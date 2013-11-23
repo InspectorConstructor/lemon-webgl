@@ -1,0 +1,220 @@
+/*
+  Nicholas St.Pierre
+  9/17/2013
+  
+  Student of UML GUI 1
+
+  a3.css
+
+  This file is a css file containing all of the page-specific classes to assignment 3.
+  It is used exclusively by a3.php
+
+*/
+
+
+/**
+   I used W3 school's css reference heavily... 
+   Almost all my css knowledge came from some part of http://www.w3schools.com/css/ .
+*/
+
+body
+{
+
+    max-width:     1000px;
+    width:         96%;
+    min-width:     300px;
+
+    margin-top:   65px; /* We need this to leave room for the nav-bar. 
+                           Placing the vertical offset here is good: this won't break if we re-style
+			   things that come underneath the nav-bar.
+                           MAINTAINER: make sure it AT LEAST AS BIG AS the navbar's height. */
+
+    font-family:  Arial, Helvetica, sans-serif; /* SRC: http://www.w3schools.com/css/tryit.asp?filename=trycss_font-family */
+}
+
+/*
+   draw an artsy line underneath our h1 with this class:
+*/
+h1
+{
+    padding-bottom: 2px;
+    border-bottom: #DDFFDD solid thin;
+}
+
+
+
+/* 
+   this is a place-holder class. We have it here so we can style the decendants of any horizontal-list's.
+*/
+.horizontal-list
+{
+    margin: 0px;
+}
+
+
+/*
+   how to style the list elements of a horizontal unordered list: (next to one another, with some padding)
+*/
+.horizontal-list>li
+{
+
+    /* THANKS TO http://css.maxdesign.com.au/listamatic/horizontal01.htm for the horiontal list CSS trick. */
+    display:           inline-block;
+    list-style-type:   none;
+
+    padding-right:     45px;
+    padding-left:      30px;
+    padding-top:       6px;
+    padding-bottom:    6px;
+
+    margin:            0px;
+
+}
+
+
+/* 
+   the NAVIGATION-BAR style
+*/
+.navbar
+{
+
+    position:          fixed;
+    top:               2px;
+
+    border:            white solid thin ;
+    border-radius:     5px;
+
+    background-color:  #EE7000;    
+
+    margin:            6px;
+
+   /* HEY MAINTAINER 
+      Do not set the height of this if you can help it. 
+      The navbar should be as tall as the stuff inside it, automatically.
+    */
+
+    width:             inherit;
+    max-width:         inherit;
+
+    /* need some padding to get the box widths to be equivalent. */
+    padding-left:      0;
+    padding-right:     18px;
+
+    /* force the navbar to the top layer */
+    z-index:           2;
+
+}
+
+
+/* 
+   Navbar's UL style. The navbar is basically just an UL in a DIV.
+*/
+.navbar ul
+{
+    /* nothing much here! */
+    display:          compact;
+}
+
+
+/*
+   placeholder class to style the individual LI's in our navbar's list.
+*/
+.navbar ul li
+{
+
+    color:     lightyellow;
+
+    /* MAINTAINER: 
+       try not to set the height maunally...
+       let the page automatically do it. 
+     */
+}
+
+
+/*
+   class to apply some subtle artistic goodness to the first LI in our list.
+*/
+.navbar ul li:first-child
+{
+
+    background-color:  #ee7000;
+    background-image:  linear-gradient(90deg, #ee7000, darkorange, #ee7000, darkorange, #ee7000);
+    
+    color:             white;
+
+    margin-left:       4px; /* makes sure the background image doesn't poke through the top left corner of the border. */
+
+}
+
+
+/* tiny line of code to fix link coloring. */
+a { color:inherit; }
+
+
+/*
+   class to round box edges.
+*/
+.round-edged
+{
+    border-radius:    8px;
+}
+
+
+/*
+   class to style the main background div.
+*/
+.backgroundBox
+{
+    border:            black solid thin;
+
+    background-color:  rgba(120, 140, 41, 0.88);
+
+    padding:           12px;
+
+    margin:            6px;
+
+    width:             inherit;
+    max-width:         inherit;
+}
+
+
+/*
+   code to style the soundcloud widgit DIV CONTAINER.
+ */
+#soundcloudWidget
+{
+    /* this thing will start off hidden when the page loads. we use javascript to change this later! */
+    display: none;
+}
+
+
+/* code to style the actual iframe containing the widget. */
+#scframe
+{
+
+    /* Soundcloud gave me the following html5 attributes with the iframe copied from their site.
+       Had to change them into the collowing 4 lines of css in order to validate.
+       What a pain!
+
+        width="100%" height="450" scrolling="no" frameborder="no" ...
+	*/
+
+    border:   none;
+    width:    100%;
+    height:   320px;
+    overflow: hidden;
+}
+
+
+/* code to position the css icon. */
+#css-icon
+{
+    margin-left: 9px;
+    margin-top:  10px;
+}
+
+/* code to make the ascii music note button larger. */
+#sound-button
+{
+    font-size: large ;
+}

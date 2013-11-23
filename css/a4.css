@@ -1,0 +1,90 @@
+/**
+    Document    : a4.css
+    Created on  : Oct 5, 2013, 8:42:07 PM
+    Author      : Nicholas St.Pierre, Student of UML GUI 1
+    Description : styles the unique elements on a4.html
+   
+*/
+
+/* set the page width */
+body
+{
+
+    max-width:     1000px;
+    width:         96%;
+    min-width:     300px;
+  
+}
+
+/* style the header of the article */
+.title
+{
+  
+  font-family: 'Noto Sans', sans-serif;
+  font-size:    175%;
+  border-bottom: #555 thin solid;
+  padding:  2px 0px;
+}
+
+/* class to make a text segment small AND stylish */
+.small
+{
+  padding-top:   2px;
+  font-family:  'Noto Sans', sans-serif;
+  font-style:   italic;
+  font-size:    80%;
+  
+}
+
+/* style for the author text */
+.author
+{
+  
+  padding-top:   2px;
+  font-family: 'Noto Sans', sans-serif;
+  
+}
+
+
+/* control the size, positioning, and border of the album art */
+.albumArt
+{
+  
+  border:   #555 groove thick ;
+  float:    right;
+  height:   200px;
+  
+}
+
+
+/* style each paragraph from our JSON story */
+.para
+{
+  
+  font-family:   'Noto Sans', sans-serif;
+  margin:        1em 2em;
+  line-height:   120%
+  
+  
+}
+
+/* fancify the first letter of each paragraph */
+.para:first-letter
+{ 
+  font-size:   200%;
+  color:       #917;
+  font-family: 'Lusitana', sans-serif;
+  
+}
+
+
+/* 
+  class to style the static header at the top of my page 
+  the text indent combined with the lone border makes a very sleek look.
+*/
+.header 
+{
+  text-indent:  10px;
+  padding: 6px;
+
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!--
+
+	author:   Nicholas St.Pierre
+	email:    nstpierr@cs.uml.edu
+	
+	Student of UML CS course 91.461, GUI Programming
+
+	created: 9/11/2013
+
+	This file was adapted from Jesse Heines. Original header block follows:
+
+	Copied File:  /~heines/91.461/91.461-2012-13f/461-lecs/code/j1.html
+	Jesse M. Heines, UMass Lowell Computer Science, heines@cs.uml.edu
+	Copyright (c) 2012 by Jesse M. Heines.  All rights reserved.  May be freely 
+	copied or excerpted for educational purposes with credit to the author.
+	
+	This is my index.html for my GUI1 directory.
+
+      -->
+
+    <!-- credit for CSS inclusion: http://www.csstutorial.net/css_misc_inserting.php -->
+
+
+    <script>
+      // function to navigate to a new page
+      // credit to http://stackoverflow.com/questions/8536653/onclick-on-a-image-to-navigate-to-another-page-using-javascript
+      // answer by user "Hristo"
+      function navigate(url)
+      {
+        window.location = url ;
+      }
+    </script>
+
+    <!-- common.css has all of my simple and frequently-used css source -->
+    <link href="css/RESET.css"   rel="stylesheet" type="text/css" /> 
+    <link href="css/common.css"  rel="stylesheet" type="text/css" /> 
+    <link href="css/a3.css"      rel="stylesheet" type="text/css" />
+    <title>Nick's index</title>
+  </head>
+  <body style="width:800px">
+
+    <!-- navbar -->
+    <div  id="navbar"  class="navbar round-edged" >
+      <ul  class="horizontal-list round-edged">
+        <li><a href="index.html">GUI Index</a></li>
+        <li><a href="http://www.cs.uml.edu/~nstpierr">My CS Root Page</a></li>
+        <li><a href="http://soundcloud.com/lemonwobs">My soundcloud</a></li>
+        <li><a href="a3.html">Assignment 3</a></li>
+      </ul>
+    
+    </div>
+   
+    <!-- Main header -->
+    <div class="cleanBox">
+      <h1 class="shadowText">Hello Internet</h1>
+      <p class="orange"><strong>This is the landing page for Nicholas St.Pierre's GUI 1 (UML 91.461) assignments.</strong></p>
+    </div>
+    <br />
+
+    <!-- bio box -->
+    <div class="cleanBox">
+      <p class="orange">
+	<strong>Hey there.</strong>
+	My name is Nick. I am an undergraduate student in UMass Lowell's computer science department. As it would turn out, I don't really like computers.
+	I do, however, enjoy watching computers do interesting things, like rendering a 3D world, processing audio, and streaming video across the world.
+	Moreso, I love making computers do these interesting things.
+      </p>      
+      <p class="orange">
+	When I'm not tapping code on a keyboard, I'm either indulging in a run, cooking, or mixing audio in <a href="https://www.ableton.com/">Ableton Live</a>.
+      </p>
+    </div>
+    <br />
+
+    <!-- assignments box-->
+    <div class="cleanBox">
+      <h2>Assignments</h2>
+      <p>
+	Click underlined rows to navigate to the assignment pages.
+      </p>
+      <br>
+
+      <!-- this table will contain links to my completed assignments -->
+      <table id="indexTable" class="padCells">
+        <thead>
+          <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Setup</td>
+            <td>Install XAMPP on my Mac; no page available.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>More setup: Create an Index page</td>
+            <td>Create some directories with specific permissions, per apache tomcat, and make this page.</td>
+          </tr>
+          <tr  onclick="navigate('http://www.cs.uml.edu/~nstpierr/gui1/a3.html');" class="link" >
+            <td>3</td>
+            <td>Use some CSS!</td>
+            <td>Re-create the first page with some added css magic.</td>
+          </tr>
+          <tr  onclick="navigate('http://www.cs.uml.edu/~nstpierr/gui1/a4.html');" class="link" >
+            <td>4</td>
+            <td>Dynamic Text Formatting</td>
+            <td>Load an article defined with JSON, and render it nicely with CSS.</td>
+          </tr>
+        </tbody>
+          <tr  onclick="navigate('http://www.cs.uml.edu/~nstpierr/gui1/a5.php');" class="link" >
+            <td>5</td>
+            <td>Creating a Dynamic Table</td>
+            <td>Accept and validate input and create a multiplication table.</td>
+          </tr>
+          <tr  onclick="navigate('http://www.cs.uml.edu/~nstpierr/gui1/a6.php');" class="link" >
+            <td>6</td>
+            <td>Using the (really bad) jQuery validation plugin</td>
+            <td>Accept and validate input using the jQuery validation plugin.</td>
+          </tr>
+          <tr  onclick="navigate('http://www.cs.uml.edu/~nstpierr/gui1/a7.php');" class="link" >
+            <td>7</td>
+            <td>WebGL Graphing Calculator</td>
+            <td>Plot a curve using the canvas. This example uses WebGL. Note: you'll need a WebGL-compatible browser, and OpenGL packages on your system!</td>
+          </tr>
+        </tbody>
+      </table>
+      <br/>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+/* 
+    Document   : a7
+    Created on : Nov 15, 2013, 5:30:33 PM
+    Author     : nico200
+    Description:
+        Styles a7.php
+*/
+
+root { 
+  display: block;
+}
+
+
+body
+{
+
+    font-family:   'Noto Sans', sans-serif;    
+    /*max-width:      1200px;*/
+    min-width:      600px;
+    margin-top:     60px; /* We need this to leave room for the nav-bar.
+                             Placing the vertical offset here is good: this won't break if we re-style
+                             things that come underneath the nav-bar.
+                             MAINTAINER: make sure it AT LEAST AS BIG AS the navbar's height. */ 
+}
+
+.lowerBorder
+{
+    border-bottom: black thin solid;
+}
+
+
+
+/*
+  I copied code to splash some quick style on the h1 and h2 elements.
+  http://stackoverflow.com/questions/10668056/in-css-how-do-you-change-font-size-of-h1-and-h2
+*/
+
+h1 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 32px;
+}
+
+h2 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 24px;
+}
+
+h3
+{
+  font-weight: bold;
+  color: #29a;
+  font-size: 18px;  
+}
+
+button
+{
+  display:    inline-block;
+  padding:    18px 12px;
+  margin:     8px 4px;
+  font-size:  12px;
+}
+
+
+
+.float-r
+{
+  float: right;
+}
+
+.float-l
+{
+  float: left; 
+}
+
+
+/*
+  simple class to apply some consistant margins to the canvas element.
+*/
+.bocks
+{
+    margin-left:         12px;
+    margin-right:        0px;
+    margin-top:          4px;
+    margin-bottom:       6px;
+}

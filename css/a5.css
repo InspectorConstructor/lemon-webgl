@@ -1,0 +1,122 @@
+/* 
+    Document   : a5
+    Created on : Oct 16, 2013, 7:54:17 PM
+    Author     : Nicholas St.Pierre
+    Description:
+        CSS specific to GUI 1 assignment number five.
+*/
+
+
+body
+{
+  
+    font-family:   'Noto Sans', sans-serif;
+    max-width:     1800px;
+    width:         97%;
+    margin-top:    60px; /* We need this to leave room for the nav-bar. 
+                            Placing the vertical offset here is good: this won't break if we re-style
+                            things that come underneath the nav-bar.
+                            MAINTAINER: make sure it AT LEAST AS BIG AS the navbar's height. */ 
+}
+
+.error
+{
+  
+  background-color: lightpink;
+  
+}
+
+.valid
+{
+  background-color: lightgreen ;
+  color: darkgreen ;
+  
+}
+
+/*************** table styling ***************/
+
+/* styles that apply to the TABLE element */
+#outputTable
+{
+  color:          blue;
+  
+}
+
+/* styles that apply to the CELLS OF THE TABLE */
+#outputTable td
+{
+  
+  /*background-color: orange;*/
+  border:           black thin solid;
+  padding:          4px;
+  
+  
+}
+
+
+#outputTable tr:nth-child(n+1):hover
+{
+  background-color: yellow !important;
+  
+  
+}
+
+
+#outputTable tr:nth-child(2n)
+{
+  
+  background-color:   lightgray;
+  
+}
+
+/* 
+  tr:first-child selects the very first row of the table with ID "outputTable"
+  and td:first-child selects the first COLUMN of the same table.
+*/
+#outputTable tr:first-child, 
+#outputTable td:first-child 
+{
+  color: orange;
+  background-color: grey ;
+  
+}
+
+/* style the blank cell */
+#outputTable tr:first-child > td:first-child
+{
+  background-color: darkslategray;
+  border-left: white none thin ;
+  border-top: white none thin ;
+}
+
+
+
+
+#outputTable tr>td:hover
+{
+  
+  background-color: lightgoldenrodyellow;
+  
+}
+
+
+/* 
+  here's an 11th hour hack to make the container adjust to the size of its contents
+*/
+.loose
+{
+  width: auto !important ;
+}
+
+
+
+.unit
+{
+  border: black thin solid;
+  padding: 2px;
+  
+  
+}
+
+
+

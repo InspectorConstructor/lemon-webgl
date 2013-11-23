@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- 
+
+  Nicholas St.Pierre
+	Student of UML CS course 91.461, GUI Programming
+  10/5/2013
+
+	This file was adapted from Jesse Heines' HTML template. Original header block follows:
+
+	Copied File:  /~heines/91.461/91.461-2012-13f/461-lecs/code/j1.html
+	Jesse M. Heines, UMass Lowell Computer Science, heines@cs.uml.edu
+	Copyright (c) 2012 by Jesse M. Heines.  All rights reserved.  May be freely 
+	copied or excerpted for educational purposes with credit to the author.
+
+-->
+<html>
+  
+  <head>
+    
+    <!-- css reset file. credit link contained within the file. -->
+    <link rel="stylesheet" type="text/css" href="css/RESET.css"  />  
+
+    <!-- from Google: NOTO SANS and Lusitana web fonts. -->
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Lusitana:700|Titillium+Web:400,200' rel='stylesheet' type='text/css'> 
+
+    <!-- My common style sheet. -->
+    <link rel="stylesheet" type="text/css" href="css/common.css" />  
+
+    <!-- CSS borrowed from my previous assignment. -->
+    <link rel="stylesheet" type="text/css" href="css/a3.css" />  
+
+    <!-- CSS specific to this assignment. -->
+    <link rel="stylesheet" type="text/css" href="css/a4.css" />
+
+    
+    <!-- jQuery link from the professor Heines' site:
+
+      load jQuery library from the Google Content Delivery Network (CDN)
+      see http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/
+
+    -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <!-- Code to load JSON into the page. -->
+    <script type="text/javascript" src="script/loadJSON.js" ></script>
+    
+        
+    <title>Assignment 4</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  </head>
+  <body>
+    
+    <!-- navbar -->
+    <div  id="navbar"  class="navbar round-edged" >
+      <ul  class="horizontal-list round-edged">
+        <li><a href="index.html">GUI Index</a></li>
+        <li><a href="http://www.cs.uml.edu/~nstpierr">My CS Root Page</a></li>
+        <li><a href="http://soundcloud.com/lemonwobs">My soundcloud</a></li>
+        <li><a href="a3.html">Assignment 3</a></li>
+      </ul>
+    
+    </div>
+
+    <!-- header -->
+    <div class="header cleanBox">
+      <h1>
+        JSON Document Viewer
+      </h1>
+      <p>
+        This page will load <a href='http://www.cs.uml.edu/~nstpierr/gui1/script/8bitbEtty.json'>
+        a JSON document</a> and then render it with CSS styling below.
+      </p>
+    
+    </div>
+    <br>
+    
+    <!-- JSON document -->
+    <div id="_json" class="backgroundBox round-edged">
+      <!-- The JSON document will appear here, via jQuery-driven AJAX! -->
+    </div>
+  </body>
+
+</html>

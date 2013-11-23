@@ -1,0 +1,365 @@
+/*
+    Nicholas St.Pierre 
+    nstpierr@cs.uml.edu
+    9/10/13
+ *
+    common.css
+ *
+    This file contains some very helpful and very commonly used css things. 
+    I shall add to it over the semester. 
+ *
+ */
+
+
+/****************************** general ******************************/
+
+body
+{
+    background-color:  #c07740;
+    background-image:  url('http://1.bp.blogspot.com/-D5RrYoIComo/UEsuNaFhFyI/AAAAAAAAAIg/xK_R-2jlQGA/s1600/Classic+Autumn+Leaves+Wallp+TLG.png');
+
+    /*max-width:     1000px;
+    min-width:     300px;*/
+}
+
+
+
+/****************************** common styles ******************************/
+
+
+.shadowText
+{
+    color:        #BF5A00;
+    text-shadow:  -1px -1px 16px white;
+    font:         32px arial, sans-serif;
+    opacity:      1.0;
+}
+
+
+/*
+   class to style the main background div.
+*/
+.backgroundBox
+{
+  
+    border:            black solid thin;
+    padding:           12px;
+    background-color:  rgba(157, 171, 73, 0.9);
+
+    margin-left:         18px;
+    margin-right:        2px;
+    margin-top:          4px;
+    margin-bottom:       6px;
+    
+    box-shadow:       #555 2px 2px 6px ;
+    
+    /*width:            inherit;
+     max-width:         inherit;*/
+
+}
+
+/*
+   my standard box style. just some clean stuff.
+*/
+.cleanBox
+{
+    background-color:    #EC8; /* ideal: F0D088*/
+
+    border:              darkgreen solid thin;
+    border-radius:       4px;
+
+    box-shadow:          black 2px 2px 9px;
+
+    padding-top:         10px;
+    padding-bottom:      10px;
+    padding-left:        12px;
+    padding-right:       12px;
+
+    /*width:               91%;
+    min-width:           280px;*/
+
+    margin-left:         12px;
+    margin-right:        0px;
+    margin-top:          4px;
+    margin-bottom:       6px;
+}
+
+/*
+  class for a div
+*/
+.hollowBox
+{
+    background-color:    #F0D088;
+    opacity:             0.6;
+    padding:             2px;
+}
+
+
+.gold
+{
+    color:  #FFFF33;
+}
+
+/*
+   class to apply an orange color
+*/
+.orange
+{
+    color:  #501600;
+}
+
+.white
+{
+    color:  white;
+}
+
+
+/****************************** table classes ******************************/
+
+/*
+  class to slap some left/right padding on a thing
+*/
+.padLR
+{
+    padding-right:  12px;
+    padding-left:   12px;
+}
+
+/*
+  rule to pad out cells in a table. 
+*/
+.padCells td
+{
+    padding-right:  12px;
+    padding-left:   12px;
+    padding-top:     2px;
+}
+
+
+
+/****************************** hyperlink styles ******************************/
+
+/*
+  code for removing the automatic underlining of hyperlinks
+  source: W3 Schools: http://www.w3schools.com/css/css_link.asp
+
+  Don't reorder these four statements; they will break!
+
+*/
+a:link    {text-decoration: none;   font-style:   italic;}
+a:visited {text-decoration: none;}
+a:hover   {text-decoration: underline;}
+a:active  {text-decoration: underline;}
+
+a { color:inherit; }/* tiny line of code to fix link coloring. */
+
+
+.link 
+{
+    text-decoration: underline ;  
+    cursor: pointer;
+}
+
+
+
+
+/******************* HEADERS ************************/
+
+h1 {
+    font-size: large;
+    margin-bottom: 2px;
+}
+
+h2 {
+    font-size: large;
+}
+
+
+
+
+/****************************** navbar ******************************/
+
+
+/* 
+   the NAVIGATION-BAR style
+*/
+.navbar
+{
+
+    position:          fixed;
+    top:               0px;
+
+    border:            white solid thin ;
+    border-radius:     5px;
+
+    background-color:  #EE7000;    
+
+    margin-top:        0px;
+    margin-bottom:     6px;
+    /*margin-left:       6px;
+    margin-right:      6px;*/
+
+   /* HEY MAINTAINER 
+      Do not set the height of this if you can help it. 
+      The navbar should be as tall as the stuff inside it, automatically.
+    */
+
+    /*width:             inherit;
+    max-width:         inherit;*/
+
+    /* need some padding to get the box widths to be equivalent. */
+    padding-left:      0;
+    padding-right:     18px;
+
+    /* force the navbar to the top layer */
+    z-index:           2;
+    
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+
+
+/* 
+   Navbar's UL style. The navbar is basically just an UL in a DIV.
+*/
+.navbar ul
+{
+    /* nothing much here! */
+    display:          compact;
+}
+
+
+/*
+   placeholder class to style the individual LI's in our navbar's list.
+*/
+.navbar ul li
+{
+
+    color:     lightyellow;
+
+    /* MAINTAINER: 
+       try not to set the height maunally...
+       let the page automatically do it. 
+     */
+}
+
+
+/*
+   class to apply some subtle artistic goodness to the first LI in our list.
+*/
+.navbar ul li:first-child
+{
+
+    background-color:  #ee7000;
+    background-image:  linear-gradient(90deg, #ee7000, darkorange, #ee7000, darkorange, #ee7000);
+    
+    color:             white;
+
+    margin-left:       4px; /* makes sure the background image doesn't poke through the top left corner of the border. */
+
+}
+
+/* 
+   this is a place-holder class. We have it here so we can style the decendants of any horizontal-list's.
+*/
+.horizontal-list
+{
+    margin: 0px;
+}
+
+
+/*
+   how to style the list elements of a horizontal unordered list: (next to one another, with some padding)
+*/
+.horizontal-list>li
+{
+
+    /* THANKS TO http://css.maxdesign.com.au/listamatic/horizontal01.htm for the horiontal list CSS trick. */
+    display:           inline-block;
+    list-style-type:   none;
+
+    padding-right:     45px;
+    padding-left:      30px;
+    padding-top:       6px;
+    padding-bottom:    6px;
+
+    margin:            0px;
+
+}
+
+
+.center
+{
+  margin-left: auto;
+  margin-right: auto; 
+}
+/*
+  a neat parent class to make p-tags display on the same line
+*/
+.horiz-p p
+{
+  
+    display:  inline-block;
+  
+}
+
+.inline-block
+{  
+    display:  inline-block;
+}
+
+/* classes for index.html */
+#indexTable tr td:nth-last-child(2)
+{
+
+  border-left:  black thin solid;
+  border-right: black thin solid;
+  
+}
+
+#indexTable th
+{
+  padding:          2px 14px;
+  background-color: #FD8;
+  border-bottom:    black thin solid;
+}
+
+#indexTable
+{
+  border:   black thin solid;
+  
+}
+
+
+
+#indexTable tr:hover
+{
+  background-color: lightgoldenrodyellow;
+  
+}
+
+
+#indexTable td
+{
+  padding:  12px;
+  
+}
+
+/*
+   draw an artsy line underneath our h1 with this class:
+*/
+h1
+{
+    padding-bottom:   2px;
+    border-bottom:    #DDFFDD solid thin;
+}
+
+/*
+  position the css validation icon
+*/
+#css-icon
+{
+    margin-top:    18px;
+    margin-left:   16px;
+}
